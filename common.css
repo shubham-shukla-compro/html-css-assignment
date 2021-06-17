@@ -1,0 +1,8 @@
+:root {
+  --theme-color: #6c59b7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--theme-color);
+}
