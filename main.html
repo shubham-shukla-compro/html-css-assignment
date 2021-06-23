@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet"  href="style.css"/>
     <link rel="stylesheet" href="common.css" />
     <title>comproDLS-OnBoarding</title>
@@ -25,21 +33,54 @@
               In case you do not have an account, click on "Sign up now" to get started.
           </p>
         </div>
+
+        <!-- login card for small screen -->
+        <div class="login-card" id="card">
+          <div class="card-content">
+            <div class="card-title">
+              <h2>Sign In</h2>
+            </div>
+            <form method="post" class="form">
+              <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" placeholder="Email" required />
+              <div class="form-border"></div>
+              
+              <div class="login-password-container-sm">
+                <input id="user-password" class="form-content" type="password" name="password" placeholder="Password" required />
+                <i class="fas fa-eye eye-icon"></i>
+              </div>
+              <a href="#" class="forgot-pass-link-sm">
+                <span class="forgot-pass"> FORGOT PASSWORD?</span>
+              </a>
+              <input class="submit-btn" type="submit" name="submit" value="LOGIN" />
+               <a href="#" class="signup"> REQUEST AN ACCOUNT</a>
+            </form>
+          </div>
+        </div>
+        <!-- login card ends -->
+
+        <footer class="footer-section-sm">
+          ©2021 Compro Technologies All rights reserved
+        </footer>
       </div>
       <div class="container-half  login-section">
-        <span>Not a member?  
+        <span class="request-account-link">Not a member?  
           <a href="#"> Request an account</a>
         </span>
         <div class="login-form">
           <form class="login-form-section"> 
             <h2>Sign in</h2>
             <input type="email" name="email" placeholder="Email" class="form-input" required/>
-            <input type="password" name="password" placeholder="Password" class="form-input" required />
-            <a href="#" class="forgot-password-link">FORGOT PASSWORD ?</a>
-            <button class="form-button">Login</button>
+            <div class="form-password-container">
+              <input type="password" name="password" placeholder="Password" class="form-input" required />  
+              <i class="fas fa-eye eye-icon"></i>
+            </div>
+            <a href="#" class="forgot-password-link">FORGOT PASSWORD</a>
+            <button class="form-button">LOGIN</button>
           </form>
         </div>
-        <footer class="footer-section"> ©2021 Compro Technologies All rights reserved</footer>
+        <footer class="footer-section">
+          ©2021 Compro Technologies All rights reserved
+        </footer>
       </div>
     </div>
   </body>

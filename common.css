@@ -1,5 +1,8 @@
 :root {
   --theme-color: #6c59b7;
+  --grey-color: #e0e0e0;
+  --dark-grey-color: #626262;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
